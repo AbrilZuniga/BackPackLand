@@ -1,0 +1,130 @@
+body {
+	margin:  0;
+	min-height: 100vh;
+	background-image: url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	flex-wrap: wrap;
+}
+
+h1 {
+	color: white;
+	font-family: DK Lemon Yellow Sun;
+	font-size: 60px;
+}
+
+.slider {
+	width:95%;
+	margin: 150px 200px 150px 200px; 
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+
+	animation: cambio 15s infinite alternate;
+	animation-timing-function: linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% { margin-left: 0; }
+	16% { margin-left: 0; }
+
+	21% { margin-left: -100%; }
+	37% { margin-left: -100%; }
+
+	42% { margin-left: -200%; }
+	58% { margin-left: -200%; }
+
+	63% { margin-left: -300%; }
+	79% { margin-left: -300%; }
+
+	84% { margin-left: -400%; }
+	100% { margin-left: -400%; }
+}
+
+#main-header {
+	background: #343A40;
+	color: white;
+	height: 96px;
+	font-family: Comic Sans MS;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}
+
+#main-header a {
+	color: white;
+}
+
+
+/*
+ *logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 00 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #9DBFB7;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2cm;
+	}
+
+#main-header img {
+	height: 60px;
+}
+
+/*
+ *Navegacion
+ */
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+}
+
+	nav ul li {
+		display: inline-block;
+		line-height: 80px;
+	}
+
+		nav ul li a {
+		display: block;
+		padding: 6px 11px;
+		text-decoration: none;
+	|	}
+
+			nav ul li a:hover {
+				background: #9DBFB7;
+			}
